@@ -8,11 +8,11 @@
  */
 
 function combineNames(name1, name2) {
+    return name1 + " " + name2; 
+};
 
-}
+console.log(combineNames('James' , 'Stevens')); // "James Stevens"
 
-console.log(combineNames('James', 'Stevens')); // "James Stevens"
-
-console.log(combineNames('Justin', 'Case')); // "Justin Case"
+console.log(combineNames('Justin' , 'Case')); // "Justin Case"
 
 console.log(combineNames('Susana', 'Oria')); // "Susana Oria"
