@@ -30,10 +30,17 @@
             }]
         };
 
-       
+        // 1. Añadir melón al gráfico
+        data.labels.push("Melón");
+        data.datasets.data.push(7.62);
+        data.datasets.backgroundColor.push('rgba(0, 73, 0, 0.2)'); // Melón
+
+        // 2. Cambiar a gráfico de barras
+
+
         // Configuración del gráfico
         const config = {
-            type: 'pie',
+            type: 'bar',
             data: data,
             options: {
                 responsive: true,
