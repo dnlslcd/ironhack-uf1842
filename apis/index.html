@@ -13,7 +13,7 @@
         <div>
             <label for="username">Enter GitHub username:</label>
             <input type="text" id="username" name="username">
-            <button>Get Info</button>
+            <button id="getInfo">Get Info</button>
         </div>
         <table>
             <thead>
@@ -34,6 +34,24 @@
             </tbody>
         </table>
     </main>
+
+<script>
+
+const getInfo = document.querySelector("#getInfo");
+
+getInfo.addEventListener("click", async function(){
+    const response = await fetch("https://api.github.com/users/USERNAME");
+    console.log("objeto response: ", response);
+
+    const data = await response.json();
+    console.log("objeto data: ", data);
+
+    
+});
+
+
+
+</script>
 </body>
 
 </html>
