@@ -21,7 +21,7 @@ calculate.addEventListener("click", function(){
     valueOfPercentageTip = parseFloat(percentageTip.value);
     valueOftipAmount = parseFloat(tipAmount.value);
     valueOftotalAmount = parseFloat(totalAmount.value);
-    
+
 // 4. Calcular el total de la propina en Tip Amount.
     const tipAmount = valueOfBillAmount * (valueOfPercentageTip / 100);
     console.log("Valor del campo tip amount: ", tipAmount);
@@ -31,7 +31,7 @@ calculate.addEventListener("click", function(){
     console.log("Valor del campo total: ", totalAmount);
 
 // 6. Actualizar el dom para mostrar los campos tip amount y total
-    parseFloat(tipAmount.value) = tipAmount.toFixed(2);
+    tipAmount.value = tipAmount.toFixed(2);
     totalAmount.value = totalAmount.toFixed(2);
 });
 
